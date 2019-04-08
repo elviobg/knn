@@ -21,3 +21,8 @@ knn_classifier <- function(data, labels, instance, k){
   k_nearests <- knn(data, labels, instance, k)
   mode(k_nearests)
 }
+
+knn_regression <- function(data, labels, instance, k){
+  k_nearests <- knn(data, labels, instance, k)
+  mean(k_nearests)
+}
